@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# StaySwift — Hotel Booking App
 
-First, run the development server:
+A hotel booking app built with Next.js 14, Auth.js and MongoDB.
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-6A3FD1?style=for-the-badge&logo=vercel&logoColor=white)](https://stay-swift-nextjs-14.vercel.app)
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Auth.js](https://img.shields.io/badge/Auth.js-7C3AED?style=flat-square&logo=auth0&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+
+</div>
+
+## ✨ Features
+
+- Browse hotels and view their details
+- Book a stay and manage reservations on the **Bookings** page
+- Authentication with **Auth.js (NextAuth v5)**, MongoDB adapter and bcrypt-hashed credentials
+- Separate layouts for the auth and app areas using route groups
+- Server-side data access with Mongoose models and service helpers
+
+## 🧰 Tech Stack
+
+| Area | Tools |
+| --- | --- |
+| Framework | Next.js 14 (App Router) |
+| UI | Tailwind CSS |
+| Auth | Auth.js, @auth/mongodb-adapter, bcryptjs |
+| Database | MongoDB, Mongoose |
+
+## 🗺️ Main Routes
+
+| Route | Description |
+| --- | --- |
+| `/` | Home |
+| `/hotels` | Hotel listing |
+| `/bookings` | My bookings |
+| `/login` | Log in |
+| `/register` | Create an account |
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/fazlerabbytalukder/stay-swift-nextjs-14.git
+cd stay-swift-nextjs-14
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Add your MongoDB connection string and Auth secret to `.env.local` before running.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Then open `http://localhost:3000` in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 👤 Author
 
-## Learn More
+**Fazle Rabby Talukder** — Frontend Developer
 
-To learn more about Next.js, take a look at the following resources:
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://fazlerabbytalukder.vercel.app/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fazle-rabby-talukder/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/fazlerabbytalukder)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you find this project useful, consider giving it a ⭐!
